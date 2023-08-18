@@ -24,6 +24,7 @@
     "fontawesome": "^5.6.3",
     "ng-recaptcha": "^12.0.2",
     "ngx-joyride": "^2.5.0",
+    "node": "^20.5.0",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primeng": "^16.0.2",
