@@ -1,1 +1,29 @@
-<p>navbar works!</p>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+        <div joyrideStep="firstStep" title="NavBar" text="You can find all our services" class="container-fluid">
+            <!--logo-->
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0" >
+                    <li id="calc" *ngFor="let item of menuArray" class="mx-3" (mouseover)="menucontent(item)">{{item}}</li>
+                </ul>
+                
+              
+             
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container bg-dark" id="submenu">
+        
+    <div >
+      <a *ngIf="submenuTitle=='Calculators'">List Of Calculators</a>
+      <a *ngIf="submenuTitle=='Products'">List Of Products</a>
+    </div>
+
+  </div>
