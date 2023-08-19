@@ -33,6 +33,7 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignupComponent,
     SigninComponent,
     CalculatorComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
