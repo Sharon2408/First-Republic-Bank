@@ -1,0 +1,79 @@
+<mat-horizontal-stepper>
+    <mat-step [stepControl]="personalInfoForm">
+      <form [formGroup]="personalInfoForm">
+        <ng-template matStepLabel>Personal Information</ng-template>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="gender" required>
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Marital Status</mat-label>
+          <mat-select formControlName="maritalStatus" required>
+            <mat-option value="single">Single</mat-option>
+            <mat-option value="married">Married</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button mat-button matStepperNext>Next</button>
+      </form>
+    </mat-step>
+  
+    <mat-step [stepControl]="contactInfoForm">
+      <form [formGroup]="contactInfoForm">
+        <ng-template matStepLabel>Contact Information</ng-template>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="address" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Pincode</mat-label>
+          <input matInput formControlName="pincode" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Aadhar No</mat-label>
+          <input matInput formControlName="aadharNo" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>PAN No</mat-label>
+          <input matInput formControlName="panNo" required>
+        </mat-form-field>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </form>
+    </mat-step>
+  
+    <mat-step [stepControl]="accountInfoForm">
+      <form [formGroup]="accountInfoForm">
+        <ng-template matStepLabel>Account Information</ng-template>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Phone No</mat-label>
+          <input matInput formControlName="phoneNo" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>User ID</mat-label>
+          <input matInput formControlName="userId" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password" required>
+        </mat-form-field>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="submitForm()">Submit</button>
+      </form>
+    </mat-step>
+  </mat-horizontal-stepper>
+  
