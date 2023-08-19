@@ -33,6 +33,7 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 
 
 
@@ -47,6 +48,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
+    FrbcalculatorComponent
   ],
   imports: [
     BrowserModule,
