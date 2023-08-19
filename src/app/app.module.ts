@@ -33,7 +33,8 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HomepageComponent,
     FooterComponent,
     UserComponent,
-    SignupComponent,
+    SignupComponent,    
     SigninComponent,
     CalculatorComponent,
     DashboardComponent
@@ -50,7 +51,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatRadioModule,
+    FormsModule,
+    MatStepperModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
