@@ -34,7 +34,8 @@ import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SignupComponent,    
     SigninComponent,
     CalculatorComponent,
-    DashboardComponent
+    DashboardComponent,
+    FrbcalculatorComponent
   ],
   imports: [
     BrowserModule,
