@@ -15,6 +15,7 @@ import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
+import {MenubarModule} from 'primeng/menubar';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -52,7 +53,10 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AvatarModule,
+    MenubarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
