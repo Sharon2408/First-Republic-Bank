@@ -27,5 +27,11 @@
             "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "Content": "Loan Calculation"
         }
-    ]
+    ],
+    "SIField": [{
+        "type": "Interest type",
+        "p": "Principal Amount",
+        "n": "Total term period ",
+        "r": "Annual rate"
+    }]
 }
