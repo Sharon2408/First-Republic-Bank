@@ -33,7 +33,8 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
     HomepageComponent,
     FooterComponent,
     UserComponent,
-    SignupComponent,
+    SignupComponent,    
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
@@ -52,7 +53,12 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatRadioModule,
+    FormsModule,
+    MatStepperModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
