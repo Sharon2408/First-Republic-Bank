@@ -1,0 +1,37 @@
+{
+    "calculationType": [{
+            "id": 1,
+            "name": "Simple Interest",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "Simple Interest"
+        },
+        {
+            "id": 2,
+            "name": "EMI",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "EMI"
+        },
+        {
+            "id": 3,
+            "name": "Fixed Deposit",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "fixed deposit"
+        },
+        {
+            "id": 4,
+            "name": "Loan Calculation",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "Loan Calculation"
+        }
+    ],
+    "SIField": [{
+        "type": "Interest type",
+        "p": "Principal Amount",
+        "n": "Total term period ",
+        "r": "Annual rate"
+    }]
+}
