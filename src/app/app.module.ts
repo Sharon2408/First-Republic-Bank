@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from  '@angular/common/http';
 
 //primeng
 import { MegaMenuModule } from 'primeng/megamenu'
@@ -62,10 +63,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     FormsModule,
     MatStepperModule,
     MatInputModule,
-    ReactiveFormsModule
+
+    ReactiveFormsModule,
+    MatSelectModule,
+    HttpClientModule
+
+
 
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
