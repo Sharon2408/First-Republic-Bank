@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  appstore="/assets/images/app_store_white.png";
+  playstore="/assets/images/google_play_white.png";
+
 }
