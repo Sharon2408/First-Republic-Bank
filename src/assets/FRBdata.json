@@ -28,5 +28,14 @@
             "Content": "Loan Calculation"
         }
     ],
+
     "userDetails":[{}]
+
+    "SIField": [{
+        "type": "Interest type",
+        "p": "Principal Amount",
+        "n": "Total term period ",
+        "r": "Annual rate"
+    }]
+
 }
