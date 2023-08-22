@@ -89,7 +89,7 @@ ngOnInit(): void {
     firstname: this.firstname,
     lastname:this.lastname,
     gender:this.gender,
-    maritalstatus:this.marital,
+    marital:this.marital,
   });
   this.secondCtrl = new FormGroup({
     address: this.address,
@@ -105,7 +105,7 @@ ngOnInit(): void {
     firstname: this.firstname,
     lastname:this.lastname,
     gender:this.gender,
-    maritalstatus:this.marital,
+    marital:this.marital,
     address: this.address,
     pincode:this.pincode,
     aadhar:this.aadhar,
@@ -118,6 +118,7 @@ ngOnInit(): void {
 }
 onSubmit()
 {
+  console.log("The form is submitting");
   this.registeration.signUp(this.signupForm.value);
 }
 }
