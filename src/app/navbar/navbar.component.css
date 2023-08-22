@@ -5,8 +5,16 @@ ul{
 li{
    
     text-transform: uppercase;
+    display: inline-block;
+    position: relative;
 }
 
 #submenu{
+
+    text-align: center;
+    display: none;
+    position: relative;
+}
+#showItem{
     position: absolute;
 }

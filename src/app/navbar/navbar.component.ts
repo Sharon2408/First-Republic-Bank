@@ -13,27 +13,64 @@ submenuTitle:string='';
 
 
 ngOnInit(): void {
-  $("#submenu").hide();
 
-  $("#submenu").mouseover(function(){
-    $(this).show();
-  });
-
-
-
-  $("#submenu").mouseout(function(){
-    $(this).slideUp("slow");
-  });
+  $(document).ready(function(){
+    $("li").mouseover(function(){
+      $('#submenu').slideDown('slow');
+      console.log("hey")
+    });
+    
+    
+    
+    $("#submenu").mouseleave(function(){
+      $(this).slideUp("slow");
+    });
+  })
 
   
     
 }
+menuItems:any=[
+  {
+    key:'0',
+    label:'Calculators',
+    children:[
+      {
+        key:'01',
+        label:'Simple Interest'
+      },
+      {
+        key:'02',
+        label:'EMI'
+      },
+      {
+        key:'03',
+        label:'Fixed Deposit'
+      },
+      {
+        key:'04',
+        label:'Salary'
+      }
 
-menucontent(a:string):void{
-this.submenuTitle=a;
-  $("#submenu").slideDown('slow');
+    ]
+  },
+  {
+    key:'1',
+    label:'Products',
+    children:[
+      {
+        key:'10',
+        label:'Jeevan Karunya'
+      }
+    ]
+  }
+];
+subMenuItem:any[]=[];
 
+menucontent(a:any):void{
+  this.subMenuItem=a;
 
 }
 }
+
 
