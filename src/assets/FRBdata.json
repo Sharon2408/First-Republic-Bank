@@ -29,7 +29,7 @@
         }
     ],
 
-    "userDetails":[{}]
+    "userDetails":[{}],
 
     "SIField": [{
         "type": "Interest type",
