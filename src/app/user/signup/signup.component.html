@@ -91,7 +91,7 @@
         </div>
       </form>      
         <form [formGroup]="signupForm" novalidate>
-          <button class="btn btn-primary ps-3" (click)="onSubmit()" mat-button type="button">Signup</button>
+          <button class="btn btn-primary ps-3" (click)="signupForm.valid && onSubmit()" mat-button type="button">Signup</button>
         </form>      
     </mat-step>
   </mat-stepper>

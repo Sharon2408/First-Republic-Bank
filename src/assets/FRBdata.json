@@ -29,21 +29,7 @@
       "Content": "Loan Calculation"
     }
   ],
-  "userDetails": [
-    {
-      "firstname": "",
-      "lastname": "",
-      "gender": "",
-      "marital": "",
-      "address": "",
-      "pincode": "",
-      "aadhar": "",
-      "pan": "",
-      "email": "",
-      "phone": "",
-      "id": 1
-    }
-  ],
+  "userDetails": [],
   "SIField": [
     {
       "type": "Interest type",
