@@ -74,3 +74,9 @@
   input:checked + .slider:before {
     transform: translateX(2.8em) rotate(360deg);
   }
+
+#menu-icons i:hover{
+background-color: peachpuff;
+background-size:fill ;
+border-radius: 3px;
+}
