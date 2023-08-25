@@ -5,8 +5,13 @@ ul{
 li{
    
     text-transform: uppercase;
+    position: relative;
 }
 
 #submenu{
     position: absolute;
+    display: block;
+}
+#calc{
+    position: relative;
 }
