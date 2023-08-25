@@ -17,6 +17,7 @@ import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
+import {MenubarModule} from 'primeng/menubar';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -58,7 +59,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    AvatarModule,
+    MenubarModule
     MatRadioModule,
     FormsModule,
     MatStepperModule,
@@ -67,8 +69,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     ReactiveFormsModule,
     MatSelectModule,
     HttpClientModule
-
-
 
   ],
   providers: [MessageService],
