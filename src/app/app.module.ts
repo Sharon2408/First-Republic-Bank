@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //primeng
 import { MegaMenuModule } from 'primeng/megamenu'
@@ -26,6 +28,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+
+//COMPONENT
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
@@ -34,7 +38,8 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 
 
 @NgModule({
@@ -44,7 +49,7 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
     HomepageComponent,
     FooterComponent,
     UserComponent,
-    SignupComponent,
+    SignupComponent,    
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
@@ -56,9 +61,17 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
     BrowserAnimationsModule,
     AvatarModule,
     MenubarModule
-    
+    MatRadioModule,
+    FormsModule,
+    MatStepperModule,
+    MatInputModule,
+
+    ReactiveFormsModule,
+    MatSelectModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
