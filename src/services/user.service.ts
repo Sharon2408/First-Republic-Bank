@@ -12,27 +12,9 @@ export class UserService {
   user_details_url = environment.userDetails;
 
   signUp(form: User) {
-    return this.http.post<User[]>(this.user_details_url, form).subscribe(
-      {
-        next: () => {
-
-          setTimeout(() => {
-            this.router.navigate(['/signin']);
-          }, 1000);
-
-
-        },
-        error: () => {
-          console.log('error')
-          this.alert.add({
-            key: 'tc',
-            severity: 'error',
-            summary: 'Try again later',
-            detail: 'Something went wrong',
-          });
-        }
-      }
-    );
-
+    console.log(form);
+   this.http.post<User[]>(this.user_details_url, form).subscribe();
   }
 }
+      
+

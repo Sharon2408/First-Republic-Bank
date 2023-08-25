@@ -9,7 +9,7 @@ aadhar:string;
 pan:string;
 email:string;
 phone:string;
-userid:string;
-password:string;
+userid:null;
+password:null;
 }
 
