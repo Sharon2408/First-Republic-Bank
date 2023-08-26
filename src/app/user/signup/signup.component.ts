@@ -8,12 +8,28 @@ import {
 } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
-import { MessageService } from 'primeng/api';
+import { MessageService, Message } from 'primeng/api';
 import { Router } from '@angular/router';
 import { User } from 'src/models/user';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environment/environment';
+import { ErrorStateMatcher } from '@angular/material/core';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(
+    control: FormControl | null,
+    form: FormGroupDirective | NgForm | null
+  ): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(
+      control &&
+      control.invalid &&
+      (control.dirty || control.touched || isSubmitted)
+    );
+  }
+}
 
 
 @Component({
@@ -46,6 +62,7 @@ export class SignupComponent implements OnInit {
   pan!: FormControl;
   email!: FormControl;
   phone!: FormControl;
+  dob!:FormControl;
   user_details: User[] = [];
   randUser!: number;
   randPass!: number;
@@ -59,6 +76,9 @@ export class SignupComponent implements OnInit {
       Validators.pattern(/^[a-zA-Z]{3,}$/),
     ]);
     this.gender = new FormControl('', [
+      Validators.required,
+    ]);
+    this.dob = new FormControl('', [
       Validators.required,
     ]);
     this.marital = new FormControl('', [
@@ -92,7 +112,7 @@ export class SignupComponent implements OnInit {
       firstname: this.firstname,
       lastname: this.lastname,
       gender: this.gender,
-      marital: this.marital,
+      dob:this.dob,      
     });
     this.secondCtrl = new FormGroup({
       address: this.address,
@@ -101,6 +121,7 @@ export class SignupComponent implements OnInit {
       pan: this.pan,
     });
     this.thirdCtrl = new FormGroup({
+      marital: this.marital,
       email: this.email,
       phone: this.phone,
     });
@@ -108,6 +129,7 @@ export class SignupComponent implements OnInit {
       firstname: this.firstname,
       lastname: this.lastname,
       gender: this.gender,
+      dob:this.dob,
       marital: this.marital,
       address: this.address,
       pincode: this.pincode,
@@ -126,16 +148,20 @@ export class SignupComponent implements OnInit {
     emailjs.init('J0iciQN9nlJtRITYu');
     emailjs.send("service_l6sm1i4", "template_govhts9", {
       to_name: this.signupForm.value.firstname,
-      user_id: this.randUser,
+      userid: this.randUser,
       password: this.randPass,
       to_email: this.signupForm.value.email,
     });
-    this.signupForm.value.user_id = this.randUser;
+    this.signupForm.value.userid = this.randUser;
     this.signupForm.value.password = this.randPass;
     this.registeration.signUp(this.signupForm.value);
+    Swal.fire({
+      icon: 'success',
+      title: 'Registered successfully!',
+      text: 'Successfully signup',
+    }).then(() => {
+      this.signupForm.reset();
+    });
     this.router.navigate([""]);
-
   };
-
-
 }

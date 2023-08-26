@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +18,7 @@ import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
 import {MenubarModule} from 'primeng/menubar';
+import { MessageModule } from 'primeng/message';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -54,9 +55,13 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     SignupComponent,    
     SigninComponent,
     CalculatorComponent,
-    DashboardComponent,
+
+    DashboardComponent,   
     FrbcalculatorComponent,
-    SinglecalComponent
+SinglecalComponent
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -68,12 +73,13 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     FormsModule,
     MatStepperModule,
     MatInputModule,
+    MessageModule,
     ReactiveFormsModule,
     MatSelectModule,
     HttpClientModule,
-
+    
   ],
   providers: [MessageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
