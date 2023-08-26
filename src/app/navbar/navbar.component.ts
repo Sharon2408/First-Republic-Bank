@@ -14,9 +14,9 @@ submenuTitle:string='';
 
 ngOnInit(): void {
 
-  $(document).ready(function(){
+
     $('#submenu').hide();
-    $("li").mouseover(function(){
+    $("#calc").mouseover(function(){
       $('#submenu').slideDown('slow');
       console.log("hey")
     });
@@ -26,7 +26,6 @@ ngOnInit(): void {
     $("#submenu").mouseleave(function(){
       $(this).slideUp("slow");
     });
-  })
 
   
     
@@ -62,6 +61,45 @@ menuItems:any=[
       {
         key:'10',
         label:'Jeevan Karunya'
+      }
+    ]
+  }
+  ,
+  {
+    key:'2',
+    label:'ACCOUNTS',
+    children:[
+      {
+        key:'20',
+        label:'SAVINGS'
+      },
+      {
+        key:'21',
+        label:'LOAN'
+      }
+    ]
+  },
+  {
+    key:'3',
+    label:'LOANS',
+    children:[
+      {
+        key:'30',
+        label:'EDUCATIONAL LOAN'
+      },
+      {
+        key:'31',
+        label:'HOME LOAN'
+      },
+    ]
+  },
+  {
+    key:'4',
+    label:'OFFERS',
+    children:[
+      {
+        key:'40',
+        label:'PAISA VASOOL'
       }
     ]
   }

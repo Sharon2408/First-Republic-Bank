@@ -8,23 +8,27 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="calc" id="navbarSupportedContent">
-        <ul class="navbar-nav  mb-lg-0">
-          <li *ngFor="let item of menuItems" class="mx-3 main" (mouseover)="menucontent(item.children)">
-            {{ item.label }}
-          </li>
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-lg-0" id="calc">
           <div id="submenu" class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-3">
-                <ul>
-                  <li *ngFor="let sub of subMenuItem"><a href="http://">{{ sub.label | uppercase }}</a></li>
-                </ul>
-              </div>
-              <div class="col-9">
-                Hello
+            <div class="container content">
+              <div class="row ">
+                <div class="col-3">
+                  <ul>
+                    <li *ngFor="let sub of subMenuItem"><a href="http://">{{ sub.label | uppercase }}</a></li>
+                  </ul>
+                </div>
+                <div class="col-9">
+                  Hello
+                </div>
               </div>
             </div>
           </div>
+          
+          <li *ngFor="let item of menuItems" class=" main" (mouseover)="menucontent(item.children)">
+            {{ item.label }}
+          </li>
+          
         </ul>
       </div>
     </div>

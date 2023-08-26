@@ -61,7 +61,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     AppRoutingModule,
     BrowserAnimationsModule,
     AvatarModule,
-    MenubarModule
+    MenubarModule,
     MatRadioModule,
     FormsModule,
     MatStepperModule,
