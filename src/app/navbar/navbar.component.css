@@ -19,7 +19,7 @@ ul{
     position: relative;
     padding:10px;
     padding-bottom: 8px;
-    border-radius: 0px 0px 10px 10px;
+    
 }
 
 .main:hover{
@@ -39,4 +39,11 @@ ul{
 
 .content{
     position: relative;
+}
+
+.li-content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
 }
