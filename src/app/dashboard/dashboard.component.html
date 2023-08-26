@@ -1,1 +1,277 @@
-<p>dashboard works!</p>
+<nav class="navbar navbar-expand-lg p-2">
+  <div class="container">
+    <a class="navbar-brand ms-5" href="#">First Republic Bank</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item justify-content-center">
+          <div class="d-flex">
+            <p-avatar
+              label="V"
+              styleClass="mr-2"
+              size="large"
+              [style]="{ 'background-color': '#2196F3', color: '#ffffff' }"
+            ></p-avatar>
+            <a
+              class="nav-link text-decoration-underline"
+              aria-current="page"
+              href="#"
+              >Hi Srikanth</a
+            >
+          </div>
+          <small class="ms-2 mb-0" for="">Last Logged Time</small>
+        </li>
+
+        <button class="btn btn-outline-primary">Logout</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="secondnav" class="container-fluid d-flex justify-content-center p-2">
+  <button class="dashboard-menu mx-2 col-2">Home</button>
+  <div class="btn-group col-2">
+    <button
+      class="dashboard-menu dropdown-toggle mx-2"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Bank Accounts
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group col-2">
+    <button
+      type="button"
+      class="dashboard-menu mx-2 dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Payments & Transfer
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group col-2">
+    <button
+      type="button"
+      class="dashboard-menu mx-2 dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Cards & Loans
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="btn-group col-2">
+    <button
+      type="button"
+      class="dashboard-menu mx-2 dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Customer Service
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- content -->
+<div class="container-fluid bg-tertiary">
+  <div class="container d-flex">
+    <div class="container bg-secondary col-3">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h4 class="mb-1">Services</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-decoration-none" href="">Generate Card PIN</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href=""
+                >Increase Debit Card Limit</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none" href=""
+                >Block or Unblock ATM Card</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">Change your Address</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">Generate Card PIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h4 class="mb-1">Services</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-decoration-none" href="">Generate Card PIN</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href=""
+                >Increase Debit Card Limit</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none" href=""
+                >Block or Unblock ATM Card</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">Change your Address</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">Generate Card PIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-5">
+      <div class="d-flex mt-3">
+        <p class="col-2 my-2 fs-6">Accounts</p>
+        <p class="p-1" id="balance">
+          Show Balance:<label class="switch my-1">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </p>
+      </div>
+
+      <div class="d-flex">
+        <div class="card col-lg-6 mx-1">
+          <div class="card-title fs-5 m-1">Total Balance</div>
+          <div class="card-body">
+            <p>*********</p>
+          </div>
+        </div>
+        <div class="card col-lg-6 mx-1">
+          <div class="card-title fs-5 m-1">Savings</div>
+
+          <div class="card-body">
+            <p>*****</p>
+            <p class="text-secondary">**8966</p>
+          </div>
+          <div class="card-footer">
+            <label> Upgrade Your Saving Account </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3" id="menu-icons">
+        <div class="d-flex justify-content-center">
+          <div class="text-center mx-3 my-3 ">
+            
+            <i class="fa-solid fa-arrows-up-down fs-4"></i>
+            <p><a href="">Manage Limits</a></p>
+            
+          </div>
+
+          <div class="text-center mx-3 my-3 ">
+            <i class="fa-solid fa-indian-rupee-sign fs-4"></i>
+            <p><a href="">Recharge Now</a></p>
+      
+          </div>
+
+          <div class="text-center mx-3 my-3">
+            <i class="fa-solid fa-money-bill-trend-up fs-4"></i>
+            <p><a href="">Send Money</a></p>
+    
+          </div>
+
+          <div class="text-center mx-3 my-3">
+            <i class="fa-solid fa-credit-card fs-4"></i>
+            <p><a href="">Debit/ATM Card</a></p>
+         
+          </div>
+        </div>
+      </div>
+      <div class="card p-3 shadow my-3" style="max-width: 600px;">
+        <nav>
+          <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Bill Payments</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Recent Transactions</button>
+          </div>
+        </nav>
+        <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+          <div class="tab-pane fade active show d-flex" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+         <div class="card col-3 mx-2">
+          <div class="card-img"></div>
+          <div class="card-title text-center">Electricity</div>
+         </div>
+
+         <div class="card col-3 mx-2">
+          <div class="card-img"></div>
+          <div class="card-title text-center">PostPaid</div>
+         </div>
+
+         <div class="card col-3 mx-2">
+          <div class="card-img"></div>
+          <div class="card-title text-center">Mutual Funds</div>
+         </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <p><strong>This is some placeholder content the Profile tab's associated content.</strong>
+              Clicking another tab will toggle the visibility of this one for the next.
+              The tab JavaScript swaps classes to control the content visibility and styling. You can use it with
+              tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-secondary col-3">hello</div>
+  </div>
+</div>

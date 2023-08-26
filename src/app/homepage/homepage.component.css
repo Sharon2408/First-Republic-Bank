@@ -1,0 +1,136 @@
+.carousel {
+    position: relative;
+    z-index: 0;
+}
+
+.img1 {
+    height: 550px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    /* top: -200px; */
+}
+
+.card {
+    border-radius: 10px;
+    height: 200px;
+    padding: 5px;
+    position: absolute;
+    top: -140px;
+}
+
+.card1 {
+    left: -160px;
+    width: 570px;
+}
+
+.card2 {
+    width: 350px;
+    right: 170px;
+}
+
+.card3 {
+    width: 320px;
+    right: -160px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.sect1 .col-5,
+.sect1 .col-1,
+.sect1 .col-6 {
+    cursor: pointer;
+}
+
+.sect1 .col-5:hover,
+.sect1 .col-6:hover {
+    color: #f37e20;
+}
+
+.btn1 {
+    border-radius: 50px;
+    border: 1px solid #f37e20;
+    background-color: #f37e20;
+    color: white;
+    width: 125px;
+    height: 35px;
+}
+
+.btn1:hover {
+    border: 1px solid #f37e20;
+    color: #f37e20;
+    background-color: white;
+}
+
+.nav-link{
+    background-color: #f37e20;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    margin: 0 1px 0 1px;
+    font-size: 16px;
+}
+
+.features{
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+#chip1{
+    width:350px;
+    height: 350px;
+    margin-top: -50px;
+}
+@media (min-width:1440px) {
+    .card1 {
+        left: -130px !important;
+        width: 380px !important;
+        height: 250px !important;
+    }
+
+    .card2 {
+        width: 280px !important;
+        right: 116px !important;
+        height: 250px !important;
+    }
+
+    .card3 {
+        width: 240px !important;
+        right: -130px !important;
+        height: 250px !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .card1 {
+        left: -130px !important;
+        width: 400px !important;
+        height: 250px !important;
+    }
+
+    .card2 {
+        width: 280px !important;
+        right: 130px !important;
+        height: 250px !important;
+    }
+
+    .card3 {
+        width: 240px !important;
+        right: -130px !important;
+        height: 250px !important;
+    }
+}
+
+@media(max-width:992px) {
+    .img1 {
+        height: auto;
+    }
+
+    .card {
+        display: none;
+    }
+}

@@ -5,3 +5,10 @@
   .mat-mdc-form-field {
     margin-top: 16px;
   }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Adjust as needed */
+  }
+  

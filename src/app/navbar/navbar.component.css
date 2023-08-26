@@ -1,12 +1,42 @@
+#nav {
+    
+    width: 100%;
+    --bs-gutter-x: 0 rem !important;
+}
+.navbar-collapse
+{
+    background-color: #F29727;
+    /* min-width: 100%; */
+    min-height: 100%;
+}
 ul{
     list-style-type: none;
 }
 
-li{
+.main {
    
     text-transform: uppercase;
+    position: relative;
+    padding:10px;
+    padding-bottom: 8px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.main:hover{
+    background-color: #F2BE22;
 }
 
 #submenu{
+    background-color: #F2BE22;
     position: absolute;
+    display: block;
+    z-index: 1;
+}
+#calc{
+    position: relative;
+    display: inline-flex;
+}
+
+.content{
+    position: relative;
 }
