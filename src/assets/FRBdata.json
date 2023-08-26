@@ -1,5 +1,4 @@
 {
-
     "calculationType": [{
             "id": 1,
             "name": "Simple-Interest",
@@ -29,42 +28,22 @@
             "Content": "Loan Calculation"
         }
     ],
-    "SIField": [{
-        "type": "Interest type",
-        "p": "Principal Amount",
-        "n": "Total term period ",
-        "r": "Annual rate"
+    "userDetails": [{
+        "firstname": "Arun",
+        "lastname": "Joseph",
+        "gender": "Male",
+        "marital": "Single",
+        "address": "Gudalur",
+        "pincode": "643211",
+        "aadhar": "652616566566",
+        "pan": "NHVPS1661E",
+        "email": "amigosouls022@gmail.com",
+        "phone": "9043457599",
+        "user_id": 842090794807,
+        "password": 9589,
+        "id": 1
     }],
-  "userDetails": [
-    {
-      "firstname": "Siva",
-      "lastname": "Bharath",
-      "gender": "Male",
-      "dob": "2000-04-10",
-      "marital": "Single",
-      "address": "1,south street",
-      "pincode": "629501",
-      "aadhar": "987654736379",
-      "pan": "ASDFG1234X",
-      "email": "siva@gmail.com",
-      "phone": "8892345678",
-      "userid": 540178203943,
-      "password": 499,
-      "id": 1
-    }
-],
-  "SIField": [
-    {
-      "type": "Interest type",
-      "p": "Principal Amount",
-      "n": "Total term period ",
-      "r": "Annual rate"
-    }
-  ],
-  "session":[
+ "session":[
 
   ]
-
-  
-
 }

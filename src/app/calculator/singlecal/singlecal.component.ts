@@ -20,7 +20,7 @@ export class SinglecalComponent implements OnInit {
   }
   viewCalculator(name:string) {
     this.calType = name;
-    return this.router.navigate(['frbcal/'+name]);
+    this.router.navigate(['frbcal/'+name]);
   }
   ngOnInit(): void {
 
