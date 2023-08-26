@@ -4,6 +4,7 @@ import { environment } from 'src/environment/environment';
 import { User } from 'src/models/user';
 import { MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
+import emailjs from '@emailjs/browser';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,7 +14,9 @@ export class UserService {
 
   signUp(form: User) {
     console.log(form);
-   this.http.post<User[]>(this.user_details_url, form).subscribe();
+   this.http.post<User[]>(this.user_details_url, form).subscribe((res)=>{
+   
+   });
   }
 }
       

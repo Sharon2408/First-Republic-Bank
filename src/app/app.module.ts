@@ -69,7 +69,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
 
     ReactiveFormsModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
   providers: [MessageService],
