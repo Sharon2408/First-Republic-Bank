@@ -37,6 +37,7 @@ import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
-    FrbcalculatorComponent
+    FrbcalculatorComponent,
+    SinglecalComponent
   ],
   imports: [
     BrowserModule,

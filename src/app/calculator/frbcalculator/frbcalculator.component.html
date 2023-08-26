@@ -1,4 +1,20 @@
-<div class="Container-fluid  mb-5 mt-5" style="margin-top: 100px ">
-    <h1>Simple Interest</h1>
+<div class="Container-fluid  mb-5 mt-5" style="margin-top: 100px" *ngFor="let x of type">
+    <div class="row d-flex">
+        <div class="col-md-6">
+            <img class="card-img imgView" src="{{ x.imgBanner }}" width="100px" />
+        </div>
 
+
+        <div class="col-md-6 mt-5 mt-md-0">
+            <div class="card  p-1">
+                <div class="card ps-2">
+                    <h1>{{x.name}} </h1>
+                    <div class="card p-1 mt-2">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
