@@ -6,7 +6,7 @@
 .navbar-collapse
 {
     background-color: #F29727;
-    min-width: 100%;
+    /* min-width: 100%; */
     min-height: 100%;
 }
 ul{
@@ -30,6 +30,7 @@ ul{
     background-color: #F2BE22;
     position: absolute;
     display: block;
+    z-index: 1;
 }
 #calc{
     position: relative;
