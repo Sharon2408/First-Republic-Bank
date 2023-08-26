@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +18,7 @@ import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
 import {MenubarModule} from 'primeng/menubar';
+import { MessageModule } from 'primeng/message';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -40,6 +41,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
 
 
@@ -53,8 +55,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     SignupComponent,    
     SigninComponent,
     CalculatorComponent,
-    DashboardComponent,
-    FrbcalculatorComponent
+
+    DashboardComponent,   
+    FrbcalculatorComponent,
+SinglecalComponent
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -66,13 +73,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     FormsModule,
     MatStepperModule,
     MatInputModule,
-
+    MessageModule,
     ReactiveFormsModule,
     MatSelectModule,
     HttpClientModule,
-
+    
   ],
   providers: [MessageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,51 +1,58 @@
 {
-  "calculationType": [
-    {
-      "id": 1,
-      "name": "Simple Interest",
-      "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "Content": "Simple Interest"
-    },
-    {
-      "id": 2,
-      "name": "EMI",
-      "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "Content": "EMI"
-    },
-    {
-      "id": 3,
-      "name": "Fixed Deposit",
-      "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "Content": "fixed deposit"
-    },
-    {
-      "id": 4,
-      "name": "Loan Calculation",
-      "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
-      "Content": "Loan Calculation"
-    }
-  ],
+
+    "calculationType": [{
+            "id": 1,
+            "name": "Simple-Interest",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "Simple Interest"
+        },
+        {
+            "id": 2,
+            "name": "EMI",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "EMI"
+        },
+        {
+            "id": 3,
+            "name": "Fixed-Deposit",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "fixed deposit"
+        },
+        {
+            "id": 4,
+            "name": "Loan-Calculation",
+            "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
+            "Content": "Loan Calculation"
+        }
+    ],
+    "SIField": [{
+        "type": "Interest type",
+        "p": "Principal Amount",
+        "n": "Total term period ",
+        "r": "Annual rate"
+    }],
   "userDetails": [
     {
-      "firstname": "Arun",
-      "lastname": "Joseph",
+      "firstname": "Siva",
+      "lastname": "Bharath",
       "gender": "Male",
+      "dob": "2000-04-10",
       "marital": "Single",
-      "address": "Gudalur",
-      "pincode": "643211",
-      "aadhar": "652616566566",
-      "pan": "NHVPS1661E",
-      "email": "amigosouls022@gmail.com",
-      "phone": "9043457599",
-      "user_id": 842090794807,
-      "password": 9589,
+      "address": "1,south street",
+      "pincode": "629501",
+      "aadhar": "987654736379",
+      "pan": "ASDFG1234X",
+      "email": "siva@gmail.com",
+      "phone": "8892345678",
+      "userid": 540178203943,
+      "password": 499,
       "id": 1
     }
-  ],
+],
   "SIField": [
     {
       "type": "Interest type",
@@ -53,6 +60,9 @@
       "n": "Total term period ",
       "r": "Annual rate"
     }
+  ],
+  "session":[
+
   ],
   "NavBar":[
     {
@@ -70,4 +80,7 @@
       "about":"amount payable every month to the bank or any other financial institution until the loan amount is fully paid off. It consists of the interest on loan as well as part of the principal amount to be repaid"
     }
   ]
+
+  
+
 }

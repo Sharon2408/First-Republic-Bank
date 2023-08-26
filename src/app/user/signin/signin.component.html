@@ -1,1 +1,31 @@
-<p>signin works!</p>
+<div class="container  mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 shadow-lg mt-5 mb-5 text-center rounded-3  col-sm-12">
+            <h3 class="text-center p-4">Sign-In</h3>
+            <form class="example-form container" [formGroup]="signinForm" (ngSubmit)="signinForm.valid && onSubmit()" novalidate>
+                <div class="row">
+                    <mat-form-field class="example-full-width form-group">
+                        <mat-label>User Id</mat-label>
+                        <input matInput formControlName="userid" required>
+                        <mat-error *ngIf="userid.hasError('required')">
+                            Userid is required</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width form-group">
+                        <mat-label>Password</mat-label>
+                        <input matInput formControlName="password" required>
+                        <mat-error *ngIf="password.hasError('required')">
+                            password is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col pb-5">
+                    <p class=" pt-3 text-secondary d-flex justify-content-center">Don't have an Account?<a routerLink="/signup" class="text-decoration-none">Signup!</a></p>
+                    <button type="submit" class="btn btn-primary example-full-width">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
