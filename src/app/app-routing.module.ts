@@ -5,7 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SignupComponent } from './user/signup/signup.component';
 const routes: Routes = [
   {
-    path: "frbcal/:id",
+    path: "frbcal/:name",
     component: FrbcalculatorComponent
   },
   {

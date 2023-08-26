@@ -40,6 +40,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
 
 
@@ -54,7 +55,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
-    FrbcalculatorComponent
+    FrbcalculatorComponent,
+    SinglecalComponent
   ],
   imports: [
     BrowserModule,
