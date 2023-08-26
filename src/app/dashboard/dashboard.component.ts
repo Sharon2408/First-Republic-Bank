@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-dashboard',
@@ -8,6 +9,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class DashboardComponent {
   items: MenuItem[] | undefined;
+  constructor(private route:Router){}
 
   ngOnInit() {
       this.items = [
@@ -133,5 +135,8 @@ export class DashboardComponent {
               icon: 'pi pi-fw pi-power-off'
           }
       ];
+  }
+  userLogout(){
+   this.route.navigate([""]);     
   }
 }
