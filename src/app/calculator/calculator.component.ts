@@ -9,26 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit {
-  constructor(private router: Router,private ct: CalculationTypeService) { }
-
-  @Input() calculator: any;
+  constructor(private ct: CalculationTypeService){}
   type: calculationType[] = [];
-  public show: boolean = true;
-  calType!: number;
-  toggle() {
-    return (this.show = !this.show);
-  }
-  viewCalculator(id: number) {
-    this.calType = id;
-    return this.router.navigate(['frbcal/'+id]);
-  }
   ngOnInit(): void {
-
     this.ct.fetchCalDetails().subscribe((res) => {
       this.type = res;
       console.log(res)
     })
-
-
   }
+ 
 }
