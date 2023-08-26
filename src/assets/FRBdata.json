@@ -45,5 +45,21 @@
     }],
  "session":[
 
+  ],
+  "NavBar":[
+    {
+      "id":1,
+      "label":"si",
+      "name":"Simple Interest",
+      "img":"https://img.freepik.com/free-photo/investment-new-business-launch-plan-concept_53876-127405.jpg?size=626&ext=jpg&ga=GA1.2.1135944741.1690285861&semt=ais",
+      "about":"Simple Interest (S.I.) is the method of calculating the interest amount for a particular principal amount of money at some rate of interest"
+    },
+    {
+      "id":2,
+      "label":"emi",
+      "name":"Equated Monthly Installment",
+      "img":"https://img.freepik.com/free-vector/credit-card-payment-landing-page-concept_52683-24893.jpg?size=626&ext=jpg&ga=GA1.1.1135944741.1690285861&semt=ais",
+      "about":"amount payable every month to the bank or any other financial institution until the loan amount is fully paid off. It consists of the interest on loan as well as part of the principal amount to be repaid"
+    }
   ]
 }
