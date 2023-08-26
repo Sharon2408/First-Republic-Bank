@@ -10,7 +10,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: -200px;
+    /* top: -200px; */
 }
 
 .card {

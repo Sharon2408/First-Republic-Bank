@@ -29,7 +29,23 @@
       "Content": "Loan Calculation"
     }
   ],
-  "userDetails": [],
+  "userDetails": [
+    {
+      "firstname": "Arun",
+      "lastname": "Joseph",
+      "gender": "Male",
+      "marital": "Single",
+      "address": "Gudalur",
+      "pincode": "643211",
+      "aadhar": "652616566566",
+      "pan": "NHVPS1661E",
+      "email": "amigosouls022@gmail.com",
+      "phone": "9043457599",
+      "user_id": 842090794807,
+      "password": 9589,
+      "id": 1
+    }
+  ],
   "SIField": [
     {
       "type": "Interest type",

@@ -15,6 +15,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environment/environment';
 import emailjs from '@emailjs/browser';
 
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -129,7 +130,10 @@ export class SignupComponent implements OnInit {
       password: this.randPass,
       to_email: this.signupForm.value.email,
     });
+    this.signupForm.value.user_id = this.randUser;
+    this.signupForm.value.password = this.randPass;
     this.registeration.signUp(this.signupForm.value);
+    this.router.navigate([""]);
 
   };
 
