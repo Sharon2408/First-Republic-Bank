@@ -36,7 +36,8 @@ import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
 
@@ -47,7 +48,7 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     HomepageComponent,
     FooterComponent,
     UserComponent,
-    SignupComponent,
+    SignupComponent,    
     SigninComponent,
     CalculatorComponent,
     DashboardComponent,
@@ -58,7 +59,13 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+
+    MatRadioModule,
+    FormsModule,
+    MatStepperModule,
+    MatInputModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
