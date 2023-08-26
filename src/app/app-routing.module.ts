@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SignupComponent } from './user/signup/signup.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 const routes: Routes = [
   {
     path: "frbcal/:name",
@@ -15,6 +16,9 @@ const routes: Routes = [
   {
     path:"signup",
     component:SignupComponent
+  },{
+    path:"calculator/:id",
+    component:CalculatorComponent
   }
 ];
 

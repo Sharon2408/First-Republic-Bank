@@ -1,7 +1,7 @@
 {
     "calculationType": [{
             "id": 1,
-            "name": "Simple Interest",
+            "name": "Simple-Interest",
             "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "Content": "Simple Interest"
@@ -15,14 +15,14 @@
         },
         {
             "id": 3,
-            "name": "Fixed Deposit",
+            "name": "Fixed-Deposit",
             "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "Content": "fixed deposit"
         },
         {
             "id": 4,
-            "name": "Loan Calculation",
+            "name": "Loan-Calculation",
             "imgLogo": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "imgBanner": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/03191155/Simple-Interest-Questions.jpg",
             "Content": "Loan Calculation"
