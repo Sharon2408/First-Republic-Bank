@@ -1,48 +1,28 @@
-<div class="container-fluid">
+<div class="container-fluid " id="nav">
   <nav class="navbar navbar-expand-lg">
-    <div
-      joyrideStep="firstStep"
-      title="NavBar"
-      text="You can find all our services"
-      class="container-fluid"
-    >
-    <a class="navbar-brand" href="#">FRB</a>
+    <div joyrideStep="firstStep" title="NavBar" text="You can find all our services" class="container-fluid">
+      <a class="navbar-brand" href="#">FRB</a>
       <!--logo-->
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse"
-        id="calc"
-        id="navbarSupportedContent"
-      >
+      <div class="collapse navbar-collapse" id="calc" id="navbarSupportedContent">
         <ul class="navbar-nav  mb-lg-0">
-          <li
-            *ngFor="let item of menuItems"
-            class="mx-3"
-            (mouseover)="menucontent(item.children)"
-          >
+          <li *ngFor="let item of menuItems" class="mx-3 main" (mouseover)="menucontent(item.children)">
             {{ item.label }}
           </li>
           <div id="submenu" class="container-fluid mt-5">
             <div class="row">
-                <div class="col-3">
-                    <ul>
-                        <li *ngFor="let sub of subMenuItem"><a href="http://">{{ sub.label | uppercase }}</a></li>
-                    </ul>
-                </div>
-                <div class="col-9">
-                    Hello
-                </div>
+              <div class="col-3">
+                <ul>
+                  <li *ngFor="let sub of subMenuItem"><a href="http://">{{ sub.label | uppercase }}</a></li>
+                </ul>
+              </div>
+              <div class="col-9">
+                Hello
+              </div>
             </div>
           </div>
         </ul>

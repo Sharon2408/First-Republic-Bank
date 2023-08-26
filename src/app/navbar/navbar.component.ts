@@ -15,6 +15,7 @@ submenuTitle:string='';
 ngOnInit(): void {
 
   $(document).ready(function(){
+    $('#submenu').hide();
     $("li").mouseover(function(){
       $('#submenu').slideDown('slow');
       console.log("hey")
