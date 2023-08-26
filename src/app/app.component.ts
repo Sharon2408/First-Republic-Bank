@@ -12,7 +12,7 @@ import { CommonService } from 'src/services/common.service';
 export class AppComponent implements OnInit {
 
   title = 'First-Republic-Bank';
-  userInactive=false;
+  userInactive=true;
   sessionUrl=environment.sessionDetails;
 
   constructor(private commonservice:CommonService,private http:HttpClient) {  }
@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
     this.http.get<sessionData[]>(this.sessionUrl).subscribe(
       res=>{
         console.log(res);
-        if(res.length==0){
-          this.userInactive=true;
+        if(res.length>0){
+          this.userInactive=false;
         }
         },
 
