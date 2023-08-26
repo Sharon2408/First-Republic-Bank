@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 //primeng
 import { MegaMenuModule } from 'primeng/megamenu'
 import { TreeSelectModule } from 'primeng/treeselect';
@@ -16,6 +17,7 @@ import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
+import {MenubarModule} from 'primeng/menubar';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -41,6 +43,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { Frbca
 import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,15 +62,19 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    AvatarModule,
+    MenubarModule,
     MatRadioModule,
     FormsModule,
     MatStepperModule,
     MatInputModule,
-    ReactiveFormsModule
+
+    ReactiveFormsModule,
+    MatSelectModule,
+    HttpClientModule,
 
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
