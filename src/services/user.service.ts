@@ -14,9 +14,12 @@ export class UserService {
 
   signUp(form: User) {
     console.log(form);
-   this.http.post<User[]>(this.user_details_url, form).subscribe((res)=>{
-   
+   this.http.post<User[]>(this.user_details_url, form).subscribe((res)=>{   
    });
+  }
+
+  signIn() {
+    return this.http.get<User[]>(this.user_details_url);
   }
 }
       
