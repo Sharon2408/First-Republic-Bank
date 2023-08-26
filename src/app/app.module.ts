@@ -68,7 +68,6 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
     FormsModule,
     MatStepperModule,
     MatInputModule,
-
     ReactiveFormsModule,
     MatSelectModule,
     HttpClientModule,
