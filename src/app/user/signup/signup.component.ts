@@ -13,7 +13,22 @@ import { Router } from '@angular/router';
 import { User } from 'src/models/user';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environment/environment';
+import { ErrorStateMatcher } from '@angular/material/core';
 import emailjs from '@emailjs/browser';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(
+    control: FormControl | null,
+    form: FormGroupDirective | NgForm | null
+  ): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(
+      control &&
+      control.invalid &&
+      (control.dirty || control.touched || isSubmitted)
+    );
+  }
+}
 
 
 @Component({
@@ -126,11 +141,11 @@ export class SignupComponent implements OnInit {
     emailjs.init('J0iciQN9nlJtRITYu');
     emailjs.send("service_l6sm1i4", "template_govhts9", {
       to_name: this.signupForm.value.firstname,
-      user_id: this.randUser,
+      userid: this.randUser,
       password: this.randPass,
       to_email: this.signupForm.value.email,
     });
-    this.signupForm.value.user_id = this.randUser;
+    this.signupForm.value.userid = this.randUser;
     this.signupForm.value.password = this.randPass;
     this.registeration.signUp(this.signupForm.value);
     this.router.navigate([""]);

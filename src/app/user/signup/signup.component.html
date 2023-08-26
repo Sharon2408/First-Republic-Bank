@@ -7,12 +7,16 @@
           <mat-form-field>
             <mat-label>First Name</mat-label>
             <input matInput placeholder="First name" formControlName="firstname" required>
+            <mat-error *ngIf="firstname.hasError('pattern') && !firstname.hasError('required')">First Name contains only alphabets with minimum three character</mat-error>
+            <mat-error *ngIf="firstname.hasError('required')"> First Name is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>Last Name</mat-label>
             <input matInput placeholder="Last name" formControlName="lastname" required>
+            <mat-error *ngIf="lastname.hasError('pattern') && !firstname.hasError('required')">Last Name contains only alphabets with minimum three character</mat-error>
+            <mat-error *ngIf="lastname.hasError('required')">Last Name is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
@@ -23,6 +27,7 @@
               <mat-option value="Female">Female</mat-option>
               <mat-option value="other">Other</mat-option>
             </mat-select>
+            <mat-error *ngIf="gender.hasError('required')">Gender is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
@@ -32,6 +37,7 @@
               <mat-option value="Single">Single</mat-option>
               <mat-option value="Married">Married</mat-option>
             </mat-select>
+            <mat-error *ngIf="marital.hasError('required')">Marital status is required</mat-error>
           </mat-form-field>
         </div>
         <div>
@@ -47,24 +53,32 @@
           <mat-form-field>
             <mat-label>Address</mat-label>
             <input matInput placeholder="Address" formControlName="address" required>
+            <mat-error *ngIf="address.hasError('pattern') && !address.hasError('required')">Enter the valid Address</mat-error>
+            <mat-error *ngIf="address.hasError('required')">Address is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>Pincode</mat-label>
             <input matInput placeholder="Pincode" formControlName="pincode" required>
+            <mat-error *ngIf="pincode.hasError('pattern') && !pincode.hasError('required')">Valid Pincode contains only numbers</mat-error>
+            <mat-error *ngIf="pincode.hasError('required')">Pincode is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>Aadhar number</mat-label>
             <input matInput placeholder="Aadhar number" formControlName="aadhar" required>
+            <mat-error *ngIf="aadhar.hasError('pattern') && !aadhar.hasError('required')">Aadhar number contains only numbers</mat-error>
+            <mat-error *ngIf="aadhar.hasError('required')">Aadhar is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>PAN number</mat-label>
             <input matInput placeholder="PAN number" formControlName="pan" required>
+            <mat-error *ngIf="pan.hasError('pattern') && !pan.hasError('required')">Pan number contains combination of alphabets and numbers</mat-error>
+            <mat-error *ngIf="pan.hasError('required')">Pan number is required</mat-error>
           </mat-form-field>
         </div>
         <div>
@@ -81,16 +95,21 @@
           <mat-form-field>
             <mat-label>Email</mat-label>
             <input matInput placeholder="Email" formControlName="email" required>
+            <mat-error *ngIf="email.hasError('pattern') && !email.hasError('required')">Enter the valid email</mat-error>
+            <mat-error *ngIf="email.hasError('required')">Email is required</mat-error>
           </mat-form-field>
         </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>Phone Number</mat-label>
             <input matInput placeholder="Phone number" formControlName="phone" required>
+            <mat-error *ngIf="phone.hasError('pattern') && !phone.hasError('required')">Enter the valid phone number</mat-error>
+            <mat-error *ngIf="phone.hasError('required')">Phone number is required</mat-error>
           </mat-form-field>
         </div>
       </form>      
         <form [formGroup]="signupForm" novalidate>
+          <button class="btn btn-primary me-3" mat-button matStepperPrevious>Back</button>
           <button class="btn btn-primary ps-3" (click)="signupForm.valid && onSubmit()" mat-button type="button">Signup</button>
         </form>      
     </mat-step>
