@@ -10,7 +10,8 @@ import {Router} from '@angular/router'
 export class DashboardComponent {
   items: MenuItem[] | undefined;
   constructor(private route:Router){}
-
+bankAccount:boolean=true;
+balanceVisible=true;
   ngOnInit() {
       this.items = [
           {
@@ -135,6 +136,18 @@ export class DashboardComponent {
               icon: 'pi pi-fw pi-power-off'
           }
       ];
+
+
+  }
+
+
+  toggleVisibility(){
+  this.balanceVisible=!this.balanceVisible;
+  var button=document.getElementById("#visibility")
+  if(this.balanceVisible){
+    
+  }
+   
   }
   userLogout(){
    this.route.navigate([""]);     
