@@ -31,49 +31,20 @@
   ],
   "userDetails": [
     {
-      "firstname": "Arun",
-      "lastname": "Joseph",
-      "gender": "Male",
-      "marital": "Single",
-      "address": "Gudalur",
-      "pincode": "643211",
-      "aadhar": "652616566566",
-      "pan": "NHVPS1661E",
-      "email": "amigosouls022@gmail.com",
-      "phone": "9043457599",
-      "userid": 842090794807,
-      "password": 9589,
-      "id": 1
-    },
-    {
       "firstname": "Siva",
       "lastname": "Bharath",
       "gender": "Male",
+      "dob": "2000-04-10",
       "marital": "Single",
-      "address": "1,south street,pvc.",
+      "address": "1,south street",
       "pincode": "629501",
-      "aadhar": "948827650928",
-      "pan": "ASDFG1234A",
+      "aadhar": "987654736379",
+      "pan": "ASDFG1234X",
       "email": "siva@gmail.com",
-      "phone": "8940808429",
-      "userid": 417465623006,
-      "password": 3722,
-      "id": 2
-    },
-    {
-      "firstname": "Siva",
-      "lastname": "Virat",
-      "gender": "Male",
-      "marital": "Single",
-      "address": "sdfg",
-      "pincode": "234567",
-      "aadhar": "123456789012",
-      "pan": "ADSFG1223A",
-      "email": "styhg@gmail.com",
-      "phone": "1234567890",
-      "userid": 142215237539,
-      "password": 2244,
-      "id": 3
+      "phone": "8892345678",
+      "userid": 540178203943,
+      "password": 499,
+      "id": 1
     }
   ],
   "SIField": [

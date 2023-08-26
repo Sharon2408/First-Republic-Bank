@@ -32,12 +32,9 @@
         </div>
         <div class="input-container">
           <mat-form-field>
-            <mat-label>Marital Status</mat-label>
-            <mat-select formControlName="marital">
-              <mat-option value="Single">Single</mat-option>
-              <mat-option value="Married">Married</mat-option>
-            </mat-select>
-            <mat-error *ngIf="marital.hasError('required')">Marital status is required</mat-error>
+            <mat-label>Date of birth</mat-label>
+            <input matInput placeholder="DOB" formControlName="dob" type="date" required>
+            <mat-error *ngIf="dob.hasError('required')">Date of birth is required</mat-error>
           </mat-form-field>
         </div>
         <div>
@@ -91,6 +88,16 @@
     <mat-step [stepControl]="stepThree">
       <form [formGroup]="thirdCtrl">
         <ng-template>Password Generation</ng-template>
+        <div class="input-container">
+          <mat-form-field>
+            <mat-label>Marital Status</mat-label>
+            <mat-select formControlName="marital">
+              <mat-option value="Single">Single</mat-option>
+              <mat-option value="Married">Married</mat-option>
+            </mat-select>
+            <mat-error *ngIf="marital.hasError('required')">Marital status is required</mat-error>
+          </mat-form-field>
+        </div>
         <div class="input-container">
           <mat-form-field>
             <mat-label>Email</mat-label>
