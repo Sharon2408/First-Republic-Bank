@@ -43,10 +43,7 @@
         "password": 9589,
         "id": 1
     }],
-    "SIField": [{
-        "type": "Interest type",
-        "p": "Principal Amount",
-        "n": "Total term period ",
-        "r": "Annual rate"
-    }]
+ "session":[
+
+  ]
 }

@@ -1,5 +1,4 @@
-<!-- <app-navbar></app-navbar> -->
-<app-calculator></app-calculator>
+<app-navbar *ngIf="userInactive"></app-navbar>
 <router-outlet></router-outlet>
-<!-- <app-signup></app-signup> -->
-<!-- <app-footer></app-footer> -->
+<app-footer *ngIf="userInactive"></app-footer>
+
