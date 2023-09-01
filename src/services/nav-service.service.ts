@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environment/environment';
+import { NavModel } from 'src/models/navContent';
 
 
 @Injectable({
@@ -6,5 +9,9 @@ import { Injectable } from '@angular/core';
 })
 export class NavServiceService {
 
-  constructor() { }
+  constructor(private httpObj:HttpClient) { }
+  getOptions(){
+    return this.httpObj.get<NavModel[]>(environment.navbar);
+  }
+
 }

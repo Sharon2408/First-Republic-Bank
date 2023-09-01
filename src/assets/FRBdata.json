@@ -1,5 +1,4 @@
 {
-
     "calculationType": [{
             "id": 1,
             "name": "Simple-Interest",
@@ -29,42 +28,38 @@
             "Content": "Loan Calculation"
         }
     ],
-    "SIField": [{
-        "type": "Interest type",
-        "p": "Principal Amount",
-        "n": "Total term period ",
-        "r": "Annual rate"
+    "userDetails": [{
+        "firstname": "Arun",
+        "lastname": "Joseph",
+        "gender": "Male",
+        "marital": "Single",
+        "address": "Gudalur",
+        "pincode": "643211",
+        "aadhar": "652616566566",
+        "pan": "NHVPS1661E",
+        "email": "amigosouls022@gmail.com",
+        "phone": "9043457599",
+        "user_id": 842090794807,
+        "password": 9589,
+        "id": 1
     }],
-  "userDetails": [
-    {
-      "firstname": "Siva",
-      "lastname": "Bharath",
-      "gender": "Male",
-      "dob": "2000-04-10",
-      "marital": "Single",
-      "address": "1,south street",
-      "pincode": "629501",
-      "aadhar": "987654736379",
-      "pan": "ASDFG1234X",
-      "email": "siva@gmail.com",
-      "phone": "8892345678",
-      "userid": 540178203943,
-      "password": 499,
-      "id": 1
-    }
-],
-  "SIField": [
-    {
-      "type": "Interest type",
-      "p": "Principal Amount",
-      "n": "Total term period ",
-      "r": "Annual rate"
-    }
+ "session":[
+
   ],
-  "session":[
-
+  "NavBar":[
+    {
+      "id":1,
+      "label":"si",
+      "name":"Simple Interest",
+      "img":"https://img.freepik.com/free-photo/investment-new-business-launch-plan-concept_53876-127405.jpg?size=626&ext=jpg&ga=GA1.2.1135944741.1690285861&semt=ais",
+      "about":"Simple Interest (S.I.) is the method of calculating the interest amount for a particular principal amount of money at some rate of interest"
+    },
+    {
+      "id":2,
+      "label":"emi",
+      "name":"Equated Monthly Installment",
+      "img":"https://img.freepik.com/free-vector/credit-card-payment-landing-page-concept_52683-24893.jpg?size=626&ext=jpg&ga=GA1.1.1135944741.1690285861&semt=ais",
+      "about":"amount payable every month to the bank or any other financial institution until the loan amount is fully paid off. It consists of the interest on loan as well as part of the principal amount to be repaid"
+    }
   ]
-
-  
-
 }
