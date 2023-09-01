@@ -23,31 +23,33 @@ export class FrbcalculatorComponent implements OnInit {
   p!: number;
   n!: number;
   r!: number;
-  R!:number;
+  R!: number;
   pow!: number;
-  EMIAmount: number = 8514.99;
-  Emi2!:number;
-  num:number=1;
-  GSTAmount:number=100000;
+  Emi: String = "8514.99"; 
+  GSTAmount: number = 10000;
+  GstPercent!:number;
+  GstTotal!:number;
+  GstTotal1!:number;
   Calculatorname!: calculationType;
   EMICalculator() {
     this.p = this.loanAmount;
     this.n = this.Year * 12;
-   this.num=1;
     this.r = (this.InterestRate / 12 / 100);
-    this.R=(this.num+this.r);
-    this.pow = Math.pow(this.R,this.n)
-    this.EMIAmount = this.p * this.r * this.pow / this.pow - 1;
-//this.Emi2=this.p*this.r*Math.pow((1+this.r),this.n)/(Math.pow((1+this.r),this.n)-1)
-// console.log("R"+this.r)
-//     console.log("power"+this.pow);
-     }
+    this.Emi = (this.p * this.r * Math.pow((1 + this.r), this.n) / (Math.pow((1 + this.r), this.n) - 1)).toFixed(2);
+    console.log(this.GstPercent)
+  }
+  GSTCalculator(){
+    this.GstTotal=this.GSTAmount*this.GstPercent/100;
+    this.GstTotal1=(this.GSTAmount*this.GstPercent)*10/(100+this.GstPercent);
+    
+  }
   ngOnInit(): void {
     this.ct.fetchCalDetails().subscribe((res) => {
       this.type = res;
     })
     this.Calculatorname = this.route.snapshot.params['name']
     console.log(this.Calculatorname);
+    
 
   }
 

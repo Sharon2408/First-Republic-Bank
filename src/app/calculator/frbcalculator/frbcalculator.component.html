@@ -1,23 +1,3 @@
-<!-- <div class="Container-fluid  mb-5 mt-5" style="margin-top: 100px" *ngFor="let x of type">
-    <div class="row d-flex">
-        <div class="col-md-6">
-            <img class="card-img imgView" src="{{ x.imgBanner }}" width="100px" />
-        </div>
-
-
-        <div class="col-md-6 mt-5 mt-md-0">
-            <div class="card  p-1">
-                <div class="card ps-2">
-                    <h1>{{x.name}} </h1>
-                    <div class="card p-1 mt-2">
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="container justify-content-center text-center" *ngFor="let x of type">
     <div class="row d-flex" *ngIf="x.name=='Simple-Interest'">
         <div class=" col-5">
@@ -26,13 +6,14 @@
         <div class="col-4 justify-content-center text-center">
             <h2>{{x.name}}</h2>
             <label class="fs-5">Loan Amount</label>
-            <input type="number" value="100000" data-type="currency " min="100000" max="10000000" (keypress)="EMICalculator()" placeholder="1,00,000.00" [(ngModel)]="loanAmount">
+            <input type="number" value="100000" data-type="currency " min="100000" max="10000000" placeholder="1,00,000.00" [(ngModel)]="loanAmount" (keyup)="EMICalculator()">
             <label class="fs-5">Interest Rate</label>
-            <input type="number" value="4" min="4" max="24" placeholder="4%" [(ngModel)]="InterestRate" (keypress)="EMICalculator()"><br>
+            <input type="number" value="4" min="4" max="24" placeholder="4%" [(ngModel)]="InterestRate" (keyup)="EMICalculator()"><br>
             <label class="fs-5">Year</label><br>
-            <input type="number" value="1" min="1" max="30" placeholder="1year" [(ngModel)]="Year" (keypress)="EMICalculator()">
+            <input type="number" value="1" min="1" max="30" placeholder="1year" [(ngModel)]="Year" (keyup)="EMICalculator()">
+            <h3> {{Emi}}</h3>
         </div>
-        {{EMIAmount}}
+
     </div>
 
     <div class="row d-flex" *ngIf="x.name=='GST-Calculator'">
@@ -45,14 +26,19 @@
             <input type="number" value="100000" data-type="currency" min="100000" max="10000000" placeholder="1,00,000.00" [(ngModel)]="GSTAmount">
             <label class="fs-5">Select GST %</label>
             <div class="col-7 ms-5 ">
-                <select class="form-select" aria-label="Default select example">
-                <option selected>Select GST %</option>
-                <option value="1">5%</option>
-                <option value="2">12%</option>
-                <option value="3">18%</option>
-                <option value="4">28%</option>
+                <select name="GstPercent" id="GstPercent" class="form-select" aria-label="Default select example" [(ngModel)]="GstPercent">                  
+                        <option value="5">5%</option>
+                        <option value="12">12%</option>
+                        <option value="18">18%</option>
+                        <option value="28">28%</option>                             
+                            </select>
 
-              </select>
+
+                <button (click)="GSTCalculator()">Total</button>
+                <h2>{{GstTotal}}<br>{{GstTotal+GSTAmount}}
+
+                </h2>
+                <h5>{{GstTotal1}}</h5>
             </div>
         </div>
 
