@@ -21,6 +21,7 @@ export class UserService {
   signIn() {
     return this.http.get<User[]>(this.user_details_url);
   }
+
 }
       
 

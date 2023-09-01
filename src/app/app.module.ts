@@ -19,6 +19,12 @@ import { AvatarModule } from 'primeng/avatar';
 import { SidebarModule } from 'primeng/sidebar';
 import {MenubarModule} from 'primeng/menubar';
 import { MessageModule } from 'primeng/message';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { ListboxModule } from 'primeng/listbox';
+import { PasswordModule } from 'primeng/password';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 // Mat UI
 import { MatInputModule } from '@angular/material/input';
@@ -42,6 +48,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';import { FrbcalculatorComponent } from './calculator/frbcalculator/frbcalculator.component';
 import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
+import { AccountComponent } from './account/account.component';
 
 
 
@@ -58,7 +65,8 @@ import { SinglecalComponent } from './calculator/singlecal/singlecal.component';
 
     DashboardComponent,   
     FrbcalculatorComponent,
-SinglecalComponent
+SinglecalComponent,
+AccountComponent
 
 
 
@@ -77,6 +85,11 @@ SinglecalComponent
     ReactiveFormsModule,
     MatSelectModule,
     HttpClientModule,
+    InputTextModule,
+    InputNumberModule,
+    ListboxModule,
+    PasswordModule,
+    RadioButtonModule
     
   ],
   providers: [MessageService],
