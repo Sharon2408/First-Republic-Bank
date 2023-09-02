@@ -12,5 +12,7 @@ email:string;
 phone:string;
 userid:null;
 password:null;
+islogged:boolean;
+lastLogged:Date;
 }
 
