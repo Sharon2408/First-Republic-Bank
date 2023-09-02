@@ -14,5 +14,6 @@ userid:null;
 password:null;
 islogged:boolean;
 lastLogged:Date;
+lstLogged:Date;
 }
 

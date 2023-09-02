@@ -157,6 +157,8 @@ export class SignupComponent implements OnInit {
     });
     this.signupForm.value.userid = this.randUser;
     this.signupForm.value.password = this.randPass;
+    const currentDate = new Date();
+    this.signupForm.value.lastLogged = currentDate;
     this.registeration.signUp(this.signupForm.value);
     Swal.fire({
       icon: 'success',
