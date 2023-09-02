@@ -1,0 +1,7 @@
+.form-switch .form-check-input:after{
+    background-color: darkgrey !important;
+}
+
+.form-check-input[type=radio]{
+    border-color: darkcyan;
+}

@@ -3,31 +3,199 @@
         <div class="card-header">Register</div>
 
         <div class="card-body">
-            
-            <ul class=" ms-auto">
-                <li><div class="card flex justify-content-center">
-                    <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
-                </div></li>
-            </ul>
             <div class="row">
-                <form [formGroup]="accountReg">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="">Name:</label>
-                        <label for="">Arun</label>
-                    </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Edit</label>
                 </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="">Name:</label>
-                        <label for="">Arun</label>
+            </div>
+            <label class="mt-3 d-block ms-auto"> Personal Details</label>
+            <form [formGroup]="accountReg">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <span class="p-float-label">
+                                <input class="w-75" type="text" formControlName="firstname" pInputText readonly />
+                                <label for="float-input">First Name</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <input class="w-75" type="text" formControlName="lastname" pInputText readonly />
+                                <label for="float-input">Last Name</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="form-group">
+                                <span class="p-float-label">
+                                    <textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+                                    <label for="float-input">Address</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                <label for="float-input">Pincode</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                <label for="float-input">Aadhar</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <span class="p-float-label">
+                                    <input type="text" class="w-75" pInputText readonly />
+                                    <label for="float-input">Marital Status</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input" formControlName="gender" type="radio" name="gender"
+                                    value="male">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" formControlName="gender" type="radio" name="gender"
+                                    value="female">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <input type="text" class="w-75" pInputText />
+                                <label for="float-input">Dob</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                <label for="float-input">PAN</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                <label for="float-input">Mobile No</label>
+                            </span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <input type="text" class="w-75" formControlName="email" pInputText readonly />
+                                <label for="float-input">Email</label>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </form>
-            </div>
+            <label class="mt-3 d-block ms-auto"> Account Details</label>
+            <form [formGroup]="accountDetails">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mt-3 flex-grow-1 ">
+                            <label for="type" class="mb-3"> Account Type</label>
+                            <div class="form-check flex">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Savings Account
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Joint Account
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Salary Account
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Fixed Deposit Account
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Current Account
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <span class="p-float-label">
+                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                <label for="float-input">Minimum Balance</label>
+                            </span>
+                        </div>
 
-        
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Enable Internet
+                                banking?</label>
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Is Credit Card
+                                Required?</label>
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" formControlName="nomineeReq"
+                                (change)="nominee=nomineeReq.value" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Set Nominee? </label>
+                        </div>
+                        <div class="nominee" [hidden]="!nominee">
+                            <label for="" class="mt-3"> Nominee Details</label>
+                            <form action="" [formGroup]="nomineeDetails">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <span class="p-float-label">
+                                                <input class="w-75" type="text" pInputText readonly />
+                                                <label for="float-input">Nominee Name</label>
+                                            </span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <span class="p-float-label">
+                                                <input class="w-75" type="text" pInputText readonly />
+                                                <label for="float-input">Relation</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <span class="p-float-label">
+                                                <p-inputNumber class="w-75" inputId="integeronly"></p-inputNumber>
+                                                <label for="float-input">Phone No</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
         </div>
-        
-
     </div>

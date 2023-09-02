@@ -21,6 +21,10 @@ export class UserService {
     return this.http.get<User[]>(this.user_details_url);
   }
 
+  getActiveUser(){
+    return this.http.get<User[]>(environment.userDetails+"/?islogged_like=true")
+  }
+
 }
       
 
