@@ -61,5 +61,49 @@
       "img":"https://img.freepik.com/free-vector/credit-card-payment-landing-page-concept_52683-24893.jpg?size=626&ext=jpg&ga=GA1.1.1135944741.1690285861&semt=ais",
       "about":"amount payable every month to the bank or any other financial institution until the loan amount is fully paid off. It consists of the interest on loan as well as part of the principal amount to be repaid"
     }
+  ],
+  "Journey":[
+    {
+      "id":1,
+      "title":"Saving Account",
+      "content":"Enjoy an unmatched online banking experience 24x7",
+      "link":"OPEN INSTA ACCOUNT",
+      "image":"/assets/images/saving-account.png"
+    },
+    {
+      "id":2,
+      "title":"Loans",
+      "content":"Live your Dreams, by availing loans instantly",
+      "link":"GET LOANS INSTANTLY",
+      "image":"/assets/images/loans.png"
+    },
+    {
+      "id":3,
+      "title":"Insurance",
+      "content":"Our Insurance plans helps your family to lead happy lives.",
+      "link":"GET SECURE",
+      "image":"/assets/images/insurance.png"
+    },
+    {
+      "id":4,
+      "title":"Payment",
+      "content":"Payments made easier. Anytime, Anywhere",
+      "link":"MAKE A PAYMENT",
+      "image":"/assets/images/payments.png"
+    },
+    {
+      "id":5,
+      "title":"Cards",
+      "content":"ICICI Bank Credit Cards, to take care of all your expenses",
+      "link":"AVAIL CARDS",
+      "image":"/assets/images/cards.png"
+    },
+    {
+      "id":6,
+      "title":"Invest",
+      "content":"More savings more happines , Invest with ICICI Bank",
+      "link":"INVEST FOR FUTURE",
+      "image":"/assets/images/invest.png"
+    }
   ]
 }
