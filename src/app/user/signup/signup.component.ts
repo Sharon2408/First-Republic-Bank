@@ -16,6 +16,7 @@ import { environment } from 'src/environment/environment';
 import { ErrorStateMatcher } from '@angular/material/core';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { get } from 'jquery';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(
@@ -137,6 +138,8 @@ export class SignupComponent implements OnInit {
       pan: this.pan,
       email: this.email,
       phone: this.phone,
+      islogged: this.builder.control(false),
+      
     });
 
 
