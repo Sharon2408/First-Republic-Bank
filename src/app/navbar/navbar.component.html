@@ -1,16 +1,15 @@
 <div class="container-fluid " id="nav">
   <nav class="navbar navbar-expand-lg">
     <div joyrideStep="firstStep" title="NavBar" text="You can find all our services" class="container-fluid">
-      <a class="navbar-brand" href="#">FRB</a>
+      <!-- <a class="navbar-brand" href="#">FRB</a> -->
       <!--logo-->
-
+      <img src="/assets/images/Republic Bank.gif" alt="logo" style="width:70px;height:70px">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
         <ul class="navbar-nav  mb-lg-0" id="calc">
-          
           <li *ngFor="let item of menuItems" class=" main" (mouseover)="menucontent(item.children)">
             {{ item.label }}
           </li>

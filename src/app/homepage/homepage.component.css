@@ -243,8 +243,8 @@
 
 #caro1 {
     background-image: url("/assets/images/internet-banking-back.png");
-    background-size:contain;
-    background-position: center ;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
@@ -252,7 +252,7 @@
 
 #carouselExampleInterval3 {
     position: absolute;
-    z-index: 10;
+    z-index: 2;
 }
 
 #pa1 {
@@ -321,5 +321,21 @@
     .card1,
     .card2 {
         display: none;
+    }
+}
+
+@media(max-width:992px) {
+    #carouselExampleInterval3 {
+        display: none;
+    }
+}
+
+@media(max-width:1200px) {
+    #carouselExampleInterval1 {
+        width: 70%;
+    }
+
+    #carouselExampleInterval1 img {
+        width: 70%;
     }
 }
