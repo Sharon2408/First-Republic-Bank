@@ -1,9 +1,106 @@
-input {
-    border: 2px solid #333;
-    border-radius: 5px;
-    color: #333;
-    font-size: 32px;
-    margin: 0 0 20px;
-    padding: .5rem 1rem;
-    width: 70%;
-}
+    body {
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    sup label {
+        font-size: large;
+    }
+    
+    select {
+        width: 40%;
+        border: .2em solid #ff0000;
+        border-radius: 5px;
+    }
+    
+    #input {
+        width: 40%;
+        border: .2em solid #ff0000;
+        border-radius: 5px;
+        margin-left: 3.4em;
+    }
+    
+    #input2 {
+        width: 40%;
+        border: .2em solid #ff0000;
+        border-radius: 5px;
+        margin-left: 1.2em;
+    }
+    
+    #input3 {
+        width: 40%;
+        border: .2em solid #ff0000;
+        border-radius: 5px;
+        margin-left: 1.7em;
+    }
+    
+    #input4 {
+        width: 40%;
+        border: .2em solid #ff0000;
+        border-radius: 5px;
+        margin-left: 7.1em;
+    }
+    
+    #GSTExclusive[type='radio'],
+    #GSTInclusive[type='radio'] {
+        accent-color: #ff0000;
+    }
+    /* button total */
+    
+    .custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+        outline: none;
+    }
+    
+    .btn-5 {
+        width: 130px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        background: rgb(255, 27, 0);
+        background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, #ff0000 100%);
+    }
+    
+    .btn-5:hover {
+        color: #ff0000;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    .btn-5:before,
+    .btn-5:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #ff0000;
+        box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+        transition: 400ms ease all;
+    }
+    
+    .btn-5:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .btn-5:hover:before,
+    .btn-5:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }

@@ -17,6 +17,7 @@ export class FrbcalculatorComponent implements OnInit {
     imgBanner: '',
     Content: ''
   }
+  GSTType:string="";
   loanAmount: number = 100000;
   InterestRate: number = 4;
   Year: number = 1;
@@ -25,12 +26,14 @@ export class FrbcalculatorComponent implements OnInit {
   r!: number;
   R!: number;
   pow!: number;
-  Emi: String = "8514.99"; 
-  GSTAmount: number = 10000;
-  GstPercent!:number;
-  GstTotal!:number;
-  GstTotal1!:number;
+  Emi: String = "8514.99";
+  GSTAmount: number = 100;
+  GstPercent: number = 5;
+  GstTotal: number = 0;
+  TotalGST: String = "0";
+  PreGSTAmount: string = "0";
   Calculatorname!: calculationType;
+ 
   EMICalculator() {
     this.p = this.loanAmount;
     this.n = this.Year * 12;
@@ -38,10 +41,12 @@ export class FrbcalculatorComponent implements OnInit {
     this.Emi = (this.p * this.r * Math.pow((1 + this.r), this.n) / (Math.pow((1 + this.r), this.n) - 1)).toFixed(2);
     console.log(this.GstPercent)
   }
-  GSTCalculator(){
-    this.GstTotal=this.GSTAmount*this.GstPercent/100;
-    this.GstTotal1=(this.GSTAmount*this.GstPercent)*10/(100+this.GstPercent);
-    
+  GSTCalculator() {
+    this.GstTotal = this.GSTAmount * this.GstPercent / 100;
+  }
+  GSTInclusivecal() {
+    this.TotalGST = (this.GSTAmount - (this.GSTAmount * (100 / (100 + this.GstPercent)))).toFixed(2)
+    this.PreGSTAmount=(this.GSTAmount-parseFloat(this.TotalGST.toString())).toFixed(2)
   }
   ngOnInit(): void {
     this.ct.fetchCalDetails().subscribe((res) => {
@@ -49,7 +54,7 @@ export class FrbcalculatorComponent implements OnInit {
     })
     this.Calculatorname = this.route.snapshot.params['name']
     console.log(this.Calculatorname);
-    
+
 
   }
 
